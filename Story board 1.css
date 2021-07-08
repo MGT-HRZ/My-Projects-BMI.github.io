@@ -1,0 +1,431 @@
+body {
+    padding: 0;
+	margin: 0;
+	font-family: 'Orbitron', sans-serif;
+    background-color : black;
+}
+
+.nav1 {
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/*header*/
+
+header {
+    background-color: red;
+    padding-top: 20px;
+    min-height: 70px;
+    border-bottom: 3px solid black;
+    overflow: hidden;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    padding: 10px 10px;
+}
+
+header a:hover {
+    background-color: crimson;
+    color: black;
+    border-radius: 10px;
+}
+
+header ul {
+    margin: 0;
+    padding: 0;
+}
+
+header li {
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header nav {
+    float: right;
+    margin-top: -40px;
+}
+
+.title h1 {
+    margin: 0;
+    color: black;
+}
+
+header .current a {
+    color: white;
+    font-weight: bold;
+}
+
+header input {
+	border: 1px solid black;
+	border-radius: 5px;
+	background-color: white;
+	color: black;
+	font-family: 'Orbitron', sans-serif;
+	padding: 10px 10px;
+}
+
+.button {
+	border: 1px solid black;
+    border-radius: 5px;
+    background-color: crimson;
+    font-family: 'Orbitron', sans-serif;
+    color: black;
+    text-align: center;
+    padding: 10px 10px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+  color: white;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/*body*/
+
+.image {
+    min-height: 500px;
+    background: url('pictures/exercise.jpg') no-repeat 0px 50px;
+    background-position: right;
+    border-bottom: 1px solid black;
+}
+
+.content h1 {
+    float: right;
+    margin-top: -5px;
+    width: 56%;
+    font-size: 3vw;
+    color: black;
+    text-decoration: underline;
+}
+
+.content h1 a {
+    color: black;
+}
+
+.formbox {
+    width: 380px;
+    height: 350px;
+    position: relative;
+    margin-left: 47.2%;
+    border: 3px solid black;
+    border-radius: 10px;
+    background-color: white;
+    padding-bottom: 5px;
+    overflow: hidden;
+}
+
+.group {
+    top: 50px;
+    position: absolute;
+    width: 280px;
+    transition: .5s
+}
+
+.field {
+    width: 100%;
+    padding: 10% 0 5%;
+    margin-left: 50px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+    font-family: 'Orbitron', sans-serif;
+}
+
+#result {
+    color: limegreen;
+    margin-left: 30%; 
+
+}
+
+#result2, #result3 {
+    color: white; 
+}
+
+#dis1 {
+    margin-left: 23%;
+}
+
+#dis2 {
+    margin-left: 23%;
+}
+
+.submit {
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin-top: 15%;
+    margin-left: 25%;
+    background-color: crimson;
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.submit2 {
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin-top: 5%;
+    margin-left: 25%;
+    background-color: crimson;
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.submit:hover {
+    background-color: red;
+}
+
+.submit2:hover {
+    background-color: red;
+}
+
+.left {
+    float: left;
+    text-align: center;
+    width: 20%;
+    background-color: dimgrey;
+    border-top: 1px solid black;
+    color: white;
+    padding: 10px;
+    padding-bottom: 430px;
+    margin-top: -29.1%;
+    margin-left: -0.1%;
+}
+
+.left a {
+    text-decoration: none;
+    background-color: red;
+    border: 3px solid black;
+    border-radius: 8px;
+    padding: 10px;
+    color: black;
+    display: block;
+    cursor: pointer;
+}
+
+.left a:hover {
+    background-color: crimson;
+    color: black;
+}
+
+.left2 {
+    display: none;
+}
+
+.right {
+    width: 100%;
+    background-color: grey;
+    padding-bottom: 172.5px;
+    margin-top: -1%;
+}
+
+.footer {
+    background-color: red;
+    color: black;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    padding: 5px;
+    text-align: center;
+}
+
+/*responsive*/
+@media only screen and (max-width : 500px) {
+    .nav1 h1 {
+        text-align: center;
+        width: 100%;
+    }
+
+    header {
+        text-align: center;
+        height: -200%;
+    }
+
+    header nav, header nav li, header a {
+        float: none;
+        display: inline;
+        width: 100%;
+        text-align: center;
+        padding: 10px 5px 10px 5px;
+    }
+
+    header li input {
+        width: 60%;
+        margin-top: 15px;
+    }
+
+    .button {
+        display: none;
+    }
+
+    .content h1 {
+        text-align: center;
+        font-size: 7vw;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .formbox {
+        width: 72%;
+        height: 320px;
+        position: relative;
+        margin-left: 13.2%;
+        border: 3px solid black;
+        border-radius: 10px;
+        background-color: white;
+        padding-bottom: 5px;
+        overflow: hidden;
+        text-align: center;
+    }
+
+    .group {
+        top: 50px;
+        position: absolute;
+        width: 192px;
+        transition: .5s
+    }
+
+    .field {
+        width: 100%;
+        padding: 10% 0 5%;
+        margin-left: 50px;
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+        border-bottom: 1px solid #999;
+        outline: none;
+        background: transparent;
+        font-family: 'Orbitron', sans-serif;
+    }
+
+    #result {
+        color: limegreen;
+        margin-left: 50%; 
+
+    }
+
+    .submit {
+        width: 100%;
+        padding: 10px 30px;
+        cursor: pointer;
+        display: block;
+        margin-top: 10%;
+        margin-left: 25%;
+        background-color: crimson;
+        border: 0;
+        outline: none;
+        border-radius: 30px;
+        font-family: 'Orbitron', sans-serif;
+    }
+
+    .submit2 {
+        width: 100%;
+        padding: 10px 30px;
+        cursor: pointer;
+        display: block;
+        margin-top: 5%;
+        margin-left: 25%;
+        background-color: crimson;
+        border: 0;
+        outline: none;
+        border-radius: 30px;
+        font-family: 'Orbitron', sans-serif;
+    }
+
+    .left {
+        display: none;
+    }
+
+    .left2 {
+        text-align: center;
+        width: 75%;
+        background-color: dimgrey;
+        border: 3px solid black;
+        border-radius: 15px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-top: -480px;
+        margin-left: 37px;
+        display: block;
+    }
+
+    .left2 a {
+        text-decoration: none;
+        background-color: red;
+        border: 3px solid black;
+        border-radius: 8px;
+        padding: 10px;
+        color: black;
+        display: block;
+        cursor: pointer;
+    }
+
+    .left2 a:hover {
+        background-color: crimson;
+        color: black;
+    }
+
+    .image {
+		height: 350px;
+		background: url('pictures/exercise.jpg') no-repeat 0 -100px;
+		background-position: center;
+		border-bottom: 3px solid black;
+    }
+
+    .res2 {
+        margin-top: 100%;
+    }
+
+    .right {
+        margin-top: -100%;
+        padding-bottom: 500px;
+    }
+
+    #dis1 {
+        margin-left: 10%;
+    }
+
+    #dis2 {
+        margin-left: 10%;
+    }
+
+    .footer {
+        margin-top: 20%;
+    }

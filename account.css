@@ -1,0 +1,228 @@
+body {
+    padding: 0;
+	margin: 0;
+	font-family: 'Orbitron', sans-serif;
+    background-color : black;
+}
+
+.nav1 {
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/*header*/
+
+header {
+    background-color: red;
+    padding-top: 20px;
+    min-height: 70px;
+    border-bottom: 1px solid black;
+    overflow: hidden;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    padding: 10px 10px;
+}
+
+header a:hover {
+    background-color: crimson;
+    color: black;
+    border-radius: 10px;
+}
+
+header ul {
+    margin: 0;
+    padding: 0;
+}
+
+header li {
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header nav {
+    float: right;
+    margin-top: -40px;
+}
+
+.title h1 {
+    margin: 0;
+    color: black;
+}
+
+header .current a {
+    color: white;
+    font-weight: bold;
+}
+
+header input {
+	border: 1px solid black;
+	border-radius: 5px;
+	background-color: white;
+	color: black;
+	font-family: 'Orbitron', sans-serif;
+	padding: 10px 10px;
+}
+
+.button {
+	border: 1px solid crimson;
+    border-radius: 5px;
+    background-color: crimson;
+    font-family: 'Orbitron', sans-serif;
+    color: black;
+    text-align: center;
+    padding: 10px 10px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+  color: white;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/*body*/
+
+.image {
+    min-height: 500px;
+    background: url('pictures/exercise.jpg') no-repeat 0px 50px;
+    background-position: right;
+    border-top: 2px solid black;
+    border-bottom: 1px solid black;
+}
+
+.content h1 {
+    text-align: center;
+    margin-top: -5px;
+    width: 120%;
+    font-size: 3vw;
+    color: black;
+    text-decoration: underline;
+}
+
+/*.left {
+    float: left;
+    text-align: center;
+    width: 20.6%;
+    background-color: limegreen;
+    color: white;
+    padding: 10px;
+    padding-bottom: 357px;
+}
+
+.left a {
+    text-decoration: none;
+    background-color: springgreen;
+    border: 3px solid darkgreen;
+    border-radius: 8px;
+    padding: 10px;
+    color: black;
+    display: block;
+}
+
+.left a:hover {
+    background-color: rgb(11, 226, 11);
+    color: white;
+}*/
+
+.right {
+    width: 100%;
+    background-color: grey;
+    padding-bottom: 192px;
+}
+
+.footer {
+    background-color: red;
+    color: black;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    padding: 5px;
+    text-align: center;
+}
+
+/*responsive*/
+@media only screen and (max-width : 500px) {
+    .nav1 h1 {
+        text-align: center;
+        width: 100%;
+    }
+
+    header {
+        text-align: center;
+        height: -200%;
+    }
+
+    header nav, header nav li, header a {
+        float: none;
+        display: inline;
+        width: 100%;
+        text-align: center;
+        padding: 10px 5px 10px 5px;
+    }
+
+    header li input {
+        width: 60%;
+        margin-top: 15px;
+    }
+
+    .button {
+        display: none;
+    }
+
+    .content h1 {
+        text-align: center;
+        font-size: 7vw;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .left {
+        text-align: center;
+        width: 75%;
+        background-color: dimgreys;
+        border: 3px solid rgb(0, 73, 0);
+        border-radius: 15px;
+        padding-bottom: 10px;
+        margin-top: 470px;
+        margin-left: 36px;
+        display: block;
+    }
+
+    .image {
+		height: 350px;
+		background: url('exercise.jpg') no-repeat 0 -100px;
+		background-position: center;
+		border-bottom: 3px solid black;
+    }
+
+    .right {
+        padding-bottom: 650px;
+    }
+}
