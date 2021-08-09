@@ -227,6 +227,7 @@ header input {
     padding-bottom: 430px;
     margin-top: -29.1%;
     margin-left: -0.1%;
+    position: absolute;
 }
 
 .left a {
