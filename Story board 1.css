@@ -195,7 +195,7 @@ header input {
 }
 
 .submit2 {
-    width: 85%;
+    width: 41%;
     padding: 10px 30px;
     cursor: pointer;
     display: block;
@@ -208,11 +208,29 @@ header input {
     font-family: 'Orbitron', sans-serif;
 }
 
+.submit3 {
+    width: 41%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin-top: -13.1%;
+    margin-left: 69.1%;
+    background-color: crimson;
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+    font-family: 'Orbitron', sans-serif;
+}
+
 .submit:hover {
     background-color: red;
 }
 
 .submit2:hover {
+    background-color: red;
+}
+
+.submit3:hover {
     background-color: red;
 }
 
@@ -356,7 +374,7 @@ header input {
     }
 
     .submit2 {
-        width: 100%;
+        width: 49%;
         padding: 10px 30px;
         cursor: pointer;
         display: block;
@@ -366,6 +384,22 @@ header input {
         border: 0;
         outline: none;
         border-radius: 30px;
+        text-align: center;
+        font-family: 'Orbitron', sans-serif;
+    }
+
+    .submit3 {
+        width: 49%;
+        padding: 10px 30px;
+        cursor: pointer;
+        display: block;
+        margin-top: -18.5%;
+        margin-left: 76.5%;
+        background-color: crimson;
+        border: 0;
+        outline: none;
+        border-radius: 30px;
+        text-align: center;
         font-family: 'Orbitron', sans-serif;
     }
 
