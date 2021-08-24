@@ -163,7 +163,6 @@ header input {
 }
 
 #result {
-    color: limegreen;
     margin-left: 30%; 
 
 }
@@ -241,11 +240,10 @@ header input {
     background-color: dimgrey;
     border-top: 1px solid black;
     color: white;
-    padding: 10px;
-    padding-bottom: 430px;
     margin-top: -29.1%;
     margin-left: -0.1%;
-    position: absolute;
+    padding: 10px;
+    padding-bottom: 430px;
 }
 
 .left a {
@@ -354,7 +352,6 @@ header input {
     }
 
     #result {
-        color: limegreen;
         margin-left: 50%; 
 
     }
@@ -405,6 +402,16 @@ header input {
 
     .left {
         display: none;
+        /*float: left;
+        text-align: center;
+        width: 20%;
+        background-color: dimgrey;
+        border-top: 1px solid black;
+        color: white;
+        margin-top: -103%;
+        margin-left: -0.1%;
+        padding: 10px;
+        padding-bottom: 430px;*/
     }
 
     .left2 {
