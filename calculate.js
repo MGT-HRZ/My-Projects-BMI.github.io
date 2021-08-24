@@ -16,20 +16,30 @@ function BMI() {
 
     var cate;
 
+    var colr;
+
     if (bmio < 18.5) {
     	cate = "Uderweight";
+
+        colr = document.querySelector("#result").style.color = "gold";
     }
 
     else if (bmio >= 18.5 && bmio <= 24.99) {
     	cate = "Normal Weight";
+
+        colr = document.querySelector("#result").style.color = "limegreen";
     }
 
     else if (bmio >= 25.0 && bmio <= 29.99) {
         cate = "Overweight";
+
+        colr = document.querySelector("#result").style.color = "orange";
     }
 
     else if (bmio > 30.0) {
         cate = "Obese";
+
+        colr = document.querySelector("#result").style.color = "red";
     }
 
     }
