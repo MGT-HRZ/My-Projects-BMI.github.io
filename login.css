@@ -226,12 +226,13 @@ span {
     }
 
     .formbox {
-        width: 80%;
+        width: 84%;
+        margin-top: 15%;
 
     }
 
     .field {
-        width: 83%;
+        width: 88%;
         padding: 10px 0;
         margin: 5px 0;
         border-top: 0;
@@ -244,7 +245,7 @@ span {
     }
 
     .submit {
-        width: 60%;
+        width: 65%;
         padding: 10px 30px;
         cursor: pointer;
         display: block;
@@ -267,6 +268,6 @@ span {
     }
 
     .footer {
-        margin-top: 700px;
+        margin-top: 671px;
     }
 }
