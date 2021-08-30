@@ -15,38 +15,39 @@
                 </div>
                     <nav>
                     <ul>
-                        <li class="current"><a href="index">Login</a></li>
-                        <li><a href="account">Account</a></li>
-                        <li><a href="Story board 1">Home</a></li>
+                        <li class="current"><a href="Login.html">Login</a></li>
+                        <li><a href="account.html">Account</a></li>
+                        <li><a href="Story board 1.html">Home</a></li>
                         <li><input type="text" placeholder="Search"><button class="button"><span>Search</span></button></li>
                     </ul>
                     </nav>
                 </div>
             </header>
-            <section class="image">
-              <div class="content">
-                    <h1><a href="Story board 1">Calculate Your BMI</a></h1>
-                    <br><br><br><br>
-                    <div class="formbox">
-                      <form class="group">
-                          <input type="number" id="weight" class="field" name="Weight" placeholder="Weight (kg)" required>
-                          <input type="number" id="height" class="field" name="Height" placeholder="Height (cm)" required>
-                          <br>
-                          <center><p id="result"></p></center>
-                          <button id="btn" type="button" name="count" class="submit" onclick="BMI()"><center><b>Calculate</b></center></button>
-                          <button id="btn2" type="reset" name="clear" class="submit2"><center><b>Clear</b></center></button>
-                          <button id="btn3" type="submit" name="submit" class="submit3"><center><b>SEND</b></center></button>
-                      </form>
-                    </div>
-                </div>
+            <section>
                 <div class="nav2">
-                <!--<div class="left">
+                <div class="left">
                     <p><a href="#.html">Health</a></p>
                     <p><a href="#.html">Additional food</a></p>
                     <p><a href="#.html">Exercises</a></p>
                     <p><a href="#.html">Tips</a></p>
                     <p><a href="#.html">More</a></p>
-                </div>-->
+                </div>
+                </div>
+            </section>
+            <section class="image">
+              <div class="content">
+                    <h1><a href="Story board 1.html">Calculate Your BMI</a></h1>
+                    <div class="formbox">
+                      <form class="group">
+                          <input type="number" id="weight" class="field" name="Weight" placeholder="Weight (kg)" required>
+                          <input type="number" id="height" class="field" name="Height" placeholder="Height (cm)" required>
+                          <br>
+                          <center><b><p id="result"></p></b></center>
+                          <button id="btn" type="button" name="count" class="submit" onclick="BMI()"><center><b>Calculate</b></center></button>
+                          <button id="btn2" type="reset" name="clear" class="submit2"><center><b>Clear</b></center></button>
+                          <button id="btn3" type="submit" name="submit" class="submit3"><center><b>SEND</b></center></button>
+                      </form>
+                    </div>
                 </div>
             </section>
             <section class="right">
@@ -65,7 +66,7 @@
                     <p><a href="#.html">More</a></p>
                 </div>
             <section class="footer">
-                <p>Body Mass Index &copy; 2021</p>
+                <p>Body Mass Index &copy; MGT-HRZ | 2021</p>
         </section>
         <script src="calculate.js"></script>
     </body>
