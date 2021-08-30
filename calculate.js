@@ -19,7 +19,7 @@ function BMI() {
     var colr;
 
     if (bmio < 18.5) {
-    	cate = "Uderweight";
+    	cate = "Underweight";
 
         colr = document.querySelector("#result").style.color = "gold";
     }
